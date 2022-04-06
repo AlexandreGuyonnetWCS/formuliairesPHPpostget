@@ -46,23 +46,7 @@
 
   <?php
 
-  function retour($retour)
-  {
-    if (isset($_POST['submit'])) {
-      $name = $_POST['name'];
-      $lastname = $_POST['lastName'];
-      $subjects = $_POST['subjects'];
-      $message = $_POST['message'];
-      $email = $_POST['email'];
-      $phone = $_POST['phone'];
-      echo ("Merci" . $lastname . $name . "de nous avoir contacté à propos de" . $subjects . "." . PHP_EOL .
-        "Un de nos conseiller vous contactera soit à l’adresse"  . $email . "ou par téléphone au" . $phone . "dans les plus brefs délais pour traiter votre demande :"
-        . $message);
-        return ('Merci ' . $_POST['name'] . ' de nous avoir contacté à propos de ' . $_POST['subjects'] . '.' .'Un de nos conseiller vous contactera soit à l’adresse ' . $_POST['email'] . ' ou par téléphone au ' . $_POST['phone'] .' dans les plus brefs délais pour traiter votre demande : 
-        ' . $_POST['message'] . '.');
-    }
-  }
-
+  
 
   ?>
 </body>
